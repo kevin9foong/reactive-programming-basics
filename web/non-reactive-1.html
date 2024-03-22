@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reactive programming</title>
+</head>
+<body style="height: 100vh">
+    <div style="height: 100%; display: flex; justify-content: center; align-items: center;">
+        <button id="btn-1">Click Me</button>
+        <script type="text/javascript">
+            // place at bottom of body so that the DOM is rendered before
+            // script is executed.
+
+            // not reactive since cannot combine event streams easily.
+            const button = document.getElementById("btn-1");
+            button.addEventListener("click", () => {
+                console.log("btn-1 clicked!");
+            });
+        </script>
+    </div>
+</body>
+</html>

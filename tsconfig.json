@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "target": "ES6", // spec to transpile to
+      "module": "ES6",
+      "outDir": "./dist",
+      "strict": true,
+      "moduleResolution": "Node"
+    },
+    "include": ["src/**/*", "web/non-reactive-2.js"]
+  }
